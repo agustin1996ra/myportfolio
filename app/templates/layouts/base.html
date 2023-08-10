@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load bootstrap5 %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<body class="bg-secondary">
+    {% include 'layouts/partials/menu.html' %}
+
+    {% block content %}{% endblock content %}
+
+    {% include 'layouts/partials/footer.html' %}
+</body>
+</html>
