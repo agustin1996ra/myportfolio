@@ -1,7 +1,18 @@
-<nav class="bg-dark bg-gradient">
-    <ul class="nav">
-        <li class="nav-item">
-            <a class="nav-link" href="{% url 'home' %}">Home</a>
-        </li>
-    </ul>
-</nav>
+<nav class="navbar navbar-expand fixed-top navbar-dark shadow rounded-bottom" style="background-color:#481e4f;">
+    <div class="container-fluid">
+        <div>
+            <a class="navbar-brand" href="{% url 'home' %}">Agustin Rodriguez Alvarez</a>
+        </div>
+        <div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Proyectos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
