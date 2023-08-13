@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand fixed-top navbar-dark shadow rounded-bottom" style="background-color:#481e4f;">
+<nav class="navbar navbar-expand navbar-dark bg-dark shadow rounded-bottom" style="">
     <div class="container-fluid">
         <div>
             <a class="navbar-brand" href="{% url 'home' %}">Agustin Rodriguez Alvarez</a>
@@ -6,13 +6,13 @@
         <div>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'home' %}">Home</a>
+                    <a class="nav-link {% if pagina_actual == 'home' %}active{% endif %}" href="{% url 'home' %}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Proyectos</a>
+                    <a class="nav-link {% if pagina_actual == 'proyectos' %}active{% endif %}" href="{% url 'proyectos' %}">Proyectos</a>
                 </li>
             </ul>
         </div>
     </div>
-  </nav>
+</nav>
 
