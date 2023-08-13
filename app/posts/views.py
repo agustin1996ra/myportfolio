@@ -1,10 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Photo
 
 
 def home(request):
     pagina_actual = 'home'
-    return render(request, 'home.html', {'pagina_actual': pagina_actual})
+    foto = Photo.objects.get(id=1)
+    return render(request, 'home.html', {'pagina_actual': pagina_actual, 'foto': foto})
 
 
 def proyectos(request):
