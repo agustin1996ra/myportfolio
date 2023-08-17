@@ -1,14 +1,20 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Photo
+from .models import Album, Photo
 
 
 def home(request):
     pagina_actual = 'home'
-    foto = Photo.objects.get(id=1)
-    return render(request, 'home.html', {'pagina_actual': pagina_actual, 'foto': foto})
+    albums = Album.objects.all()
+    return render(request, 'home.html', {'pagina_actual': pagina_actual, 'albums': albums})
 
 
-def proyectos(request):
+def v_albums(request):
     pagina_actual = 'proyectos'
-    return render(request, 'proyectos.html', {'pagina_actual': pagina_actual})
+    fotos = Photo.objects.all()
+    return render(request, 'albums.html', {'pagina_actual': pagina_actual})
+
+
+def v_photos(request):
+
+    return render(request, 'photos.html', {})
