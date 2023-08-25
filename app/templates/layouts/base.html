@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 {% load bootstrap5 %}
 <html lang="en">
 <head>
@@ -7,8 +8,9 @@
     <title>{% block title %}{% endblock title %}</title>
     {% bootstrap_css %}
     {% bootstrap_javascript %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
-<body class="bg-body">
+<body >
     {% include 'layouts/partials/menu.html' %}
 
     {% block content %}{% endblock content %}

@@ -1,0 +1,11 @@
+body {
+    background: rgb(28,40,51);
+    background: linear-gradient(180deg, rgba(28,40,51,1) 0%, rgba(32,46,59,1) 35%); 
+    color: white;
+    padding-top: 55px;
+    font-family: monospace;
+}
+
+nav {
+    
+}
