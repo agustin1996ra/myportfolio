@@ -1,11 +1,16 @@
 body {
     background: rgb(28,40,51);
-    background: linear-gradient(180deg, rgba(28,40,51,1) 0%, rgba(32,46,59,1) 35%); 
+    background: linear-gradient(180deg, rgba(28,40,51,1) 0%, rgba(28,28,28,1) 90%); 
     color: white;
     padding-top: 55px;
     font-family: monospace;
 }
 
-nav {
-    
+.carousel-item {
+    background: #1c1c1c;
+    height: 92vh;
+}
+
+.footer-div {
+    background: #1c1c1c;
 }
