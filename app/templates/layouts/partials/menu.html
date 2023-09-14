@@ -6,10 +6,10 @@
         <div>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link {% if pagina_actual == 'home' %}active{% endif %}" href="{% url 'home' %}">Home</a>
+                    <a class="nav-link home {% if pagina_actual == 'home' %}active{% endif %}" href="{% url 'home' %}"><span>&nbsp;Home&nbsp;</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if pagina_actual == 'proyectos' %}active{% endif %}" href="{% url 'proyectos' %}">Proyectos</a>
+                    <a class="nav-link proyectos {% if pagina_actual == 'proyectos' %}active{% endif %}" href="{% url 'proyectos' %}"><span>&nbsp;Proyectos&nbsp;</span></a>
                 </li>
             </ul>
         </div>

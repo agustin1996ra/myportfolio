@@ -14,3 +14,19 @@ body {
 .footer-div {
     background: #1c1c1c;
 }
+
+.home:hover:before {
+    content:"[Home]";
+}
+
+.home:hover span {
+    display: none;
+}
+
+.proyectos:hover:before {
+    content:"[Proyectos]";
+}
+
+.proyectos:hover span {
+    display: none;
+}
