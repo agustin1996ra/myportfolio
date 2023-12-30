@@ -2,13 +2,13 @@ body {
     background: rgb(28,40,51);
     background: linear-gradient(180deg, rgba(28,40,51,1) 0%, rgba(28,28,28,1) 90%); 
     color: white;
-    padding-top: 55px;
+    padding-top: 5.8vh;
     font-family: monospace;
 }
 
 .carousel-item {
     background: #1c1c1c;
-    height: 92vh;
+    height: 94vh;
 }
 
 .footer-div {
